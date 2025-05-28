@@ -29,24 +29,25 @@ At the same time, it is possible to have assets which are provably
 
 ### Published state
 
-| Name      | Required | Is multiple | Data type             | Description                                            |
-|-----------|----------|-------------|-----------------------|--------------------------------------------------------|
-| name      | yes      | can be      | String                | History of asset names                                 |
-| ticker    | yes      | can be      | String                | History of asset tickers                               |
-| terms     | no       | can be      | String                | Asset terms and conditions                             |
-| precision | yes      | can be      | integer, from 0 to 18 | History of asset precision - number of decimals        |
-| issued    | yes      | can be      | U64                   | Number of assets issued at primary or secondary issues |
+| Name      | Required | Is multiple | Data type             | Description                                                                  |
+|-----------|----------|-------------|-----------------------|------------------------------------------------------------------------------|
+| name      | yes      | can be      | String                | History of asset name                                                        |
+| ticker    | yes      | can be      | String                | History of asset ticker                                                      |
+| terms     | no       | can be      | String                | History of asset terms and conditions                                        |
+| precision | yes      | can be      | integer, from 0 to 18 | History of asset precision (number of decimals)                              |
+| issued    | yes      | can be      | U64                   | Number of assets issued at primary (genesis) or secondary (`inflate`) issues |
+| burned    | no       | can be      | U64                   | Number of assets burned with an `inflate` operation                          |
 
 ### Computed state
 
-| Name         | Required | Data type             | Description                                                                                                                         |
-|--------------|----------|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| name         | yes      | String                | History of asset names                                                                                                              |
-| ticker       | yes      | String                | History of asset tickers                                                                                                            |
-| terms        | no       | String                | Asset terms and conditions                                                                                                          |
-| precision    | yes      | integer, from 0 to 18 | History of asset precision - number of decimals                                                                                     |
-| issuedSupply | yes      | U64                   | The known total issued asset supply (see [Get circulating asset suppu](#get-circulating-asset-supply) section for the details)      |
-| maxSupply    | no       | U64                   | The maximum supply of an asset (ss [Get maximum possible asset supply](#get-maximum-possible-asset-supply) section for the details) |
+| Name      | Required | Data type             | Description                                                                                                                      |
+|-----------|----------|-----------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| name      | yes      | String                | Actual asset name                                                                                                                |
+| ticker    | yes      | String                | Actual asset ticker                                                                                                              |
+| terms     | no       | String                | Asset terms and conditions                                                                                                       |
+| precision | yes      | integer, from 0 to 18 | Actual asset precision (number of decimals)                                                                                      |
+| supply    | yes      | U64                   | Circulating asset supply (see [Get circulating asset suppu](#get-circulating-asset-supply) section for the details)              |
+| maxSupply | no       | U64                   | Maximum supply of the asset (ss [Get maximum possible asset supply](#get-maximum-possible-asset-supply) section for the details) |
 
 ### Owned state
 
@@ -86,22 +87,22 @@ Check for `owned.inflation` right, which, if present, defines an ability for the
 If it has a value, this value provides a limit for the further asset inflation.
 If the value is not present, the possible inflation is unlimited.
 
-### Get the history of secondary issues (inflation)
+### Get the history of inflation
 
-Take the value in `global.issued`, which is an array.
+Take the values in `global.issued` and `global.burned`, which are arrays.
 The individual state entries in that array contain the information of the height at which the issue
-has happened and the number of the issued assets at that point.
+or burn has happened and the number of the issued/burned assets at that point.
 
 ### Get circulating asset supply
 
-For a non-inflatable asset, `computed.issuedSupply` must always be defined and contain
-the total supply.
+For a non-inflatable asset, `computed.supply` must always be defined and contain circulating
+supply which is always equal to the the total supply.
 
-For an inflatable asset, check `computed.issuedSupply`, which reflects the known part of the
-issued supply. However, there might be issues that are not known. This can be detected by
-checking whether seal definition in `owned.inflationRight` is spent by some bitcoin transaction:
-if it is spent, the total circulating supply is not known and the wallet should request the
-latest updates from the asset issuer.
+For an inflatable asset, check `computed.supply`, which reflects the known part of the issued supply
+minus burned supply (if any). However, there might be issues or burns that are not known.
+This can be detected by checking whether seal definition in `owned.inflationRight` is spent by some
+bitcoin transaction: if it is spent, the total circulating supply is not known and the wallet should
+request the latest updates from the asset issuer.
 
 ### Get maximum possible asset supply
 
