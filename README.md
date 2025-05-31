@@ -10,7 +10,7 @@
 | [RGB-5]  | Informational | Draft  | RGB codebase maintenance                                 | -                  |
 | [RGB-6]  | Informational | Draft  | Versioning of RGB releases                               | Maxim Orlovsky     |
 | RGB-7    | Toolchain     | Draft  | Signing of RGB contracts and issuers                     | Maxim Orlovsky     |
-| RGB-8    | Informational | Active | RGB branding and trademarks                              | Olga Ukolova       |
+| RGB-8    | Informational | Active | RGB branding                                             | Olga Ukolova       |
 | RGB-9    | Toolchain     | Active | RGB assembly language                                    | Maxim Orlovsky     |
 | RGB-10   | Toolchain     | Draft  | Contractum language                                      | Maxim Orlovsky     |
 | RGB-11   | Toolchain     | Active | RGB contract APIs, version 1.0                           | Maxim Orlovsky     |
@@ -21,7 +21,7 @@
 | RGB-16   | Wallet        | Draft  | RGB BOLT-7-compatible lightning gossip protocol          | Zoe Faltiba        |
 | RGB-17   | Wallet        | Draft  | RGB BOLT-9-compatible lightning invoices                 | Zoe Faltiba        |
 | RGB-18   | Wallet        | Draft  | RGB atomic swaps                                         | Federico Tenga     |
-| [RGB-19] | Inteface      | Draft  | Common RGB contract data types                           | Maxim Orlovsky     |
+| [RGB-19] | Interface     | Draft  | Common RGB contract data types                           | Maxim Orlovsky     |
 | [RGB-20] | Interface     | Draft  | Standard for fungible assets                             | _multiple_         |
 | [RGB-21] | Interface     | Draft  | Standard for non-fungible assets                         | _multiple_         |
 | RGB-22   | Interface     | Draft  | Standard for reputation and identity                     | Maxim Orlovsky     |
@@ -29,7 +29,7 @@
 | RGB-24   | Interface     | Draft  | Standard for decentralized global name system            | Maxim Orlovsky     |
 | RGB-25   | Interface     | Draft  | Standard for fractionable non-fungible real-world assets | Federico Tenga     |
 | RGB-26   | Interface     | Draft  | Standard for compliant security assets                   | Federico Tenga     |
-| RGB-30   | Interface     | Draft  | Standard for assets with decentralized issue             | Federico Tenga     |
+| RGB-30   | Interface     | Draft  | Standard for assets with decentralized issue             | Maxim Orlovsky     |
 | RGB-43   | Wallet        | Draft  | Purpose field for deterministic RGB wallets              | Maxim Orlovsky     |
 | RGB-46   | Wallet        | Active | Consignment JSON-RPC relay API                           | Stefano Pellegrini |
 | RGB-70   | Wallet        | Active | Payment protocol                                         | Federico Tenga     |
@@ -42,5 +42,6 @@
 [RGB-5]: https://github.com/RGB-WG/RFC/blob/master/RGB-6.md
 [RGB-6]: https://github.com/RGB-WG/RFC/blob/master/RGB-6.md
 [RGB-12]: https://github.com/RGB-WG/RFC/blob/master/RGB-12.md
+[RGB-19]: https://github.com/RGB-WG/RFC/blob/master/RGB-19.md
 [RGB-20]: https://github.com/RGB-WG/RFC/blob/master/RGB-20.md
 [RGB-21]: https://github.com/RGB-WG/RFC/blob/master/RGB-21.md
