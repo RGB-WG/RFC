@@ -15,7 +15,7 @@
 | RGB-10   | Toolchain     | Draft  | Contractum language                                      | Maxim Orlovsky     |
 | RGB-11   | Toolchain     | Active | RGB contract APIs, version 1.0                           | Maxim Orlovsky     |
 | [RGB-12] | Informational | Active | RGB consensus roadmap                                    | Maxim Orlovsky     |
-| RGB-13   | Wallet        | Active | Invoicing protocol                                       | Maxim Orlovsky     |
+| RGB-13   | Wallet        | Active | Invoicing protocol                                       | _multiple_         |
 | RGB-14   | Wallet        | Active | RGB payment scripts and prefabricated payments           | Maxim Orlovsky     |
 | RGB-15   | Wallet        | Draft  | RGB BOLT-3-base lightning channels                       | Zoe Faltiba        |
 | RGB-16   | Wallet        | Draft  | RGB BOLT-7-compatible lightning gossip protocol          | Zoe Faltiba        |

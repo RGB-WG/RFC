@@ -150,7 +150,7 @@ data TokenNo: U32
 | maxTokens    | no       | no          | U32                    | Maximal number of tokens                   |
 | maxFractions | no       | no          | TokenFractions         | Maximal number of fractions in any token   |
 | baseUrl      | no       | no          | String                 | History of the base URL for external media |
-| token        | yes      | can be      | Nft, NftSpec           | Individual tokens in the collection        |
+| token        | no       | can be      | Nft, NftSpec           | Individual tokens in the collection        |
 | engraving    | no       | yes         | TokenNo, EmbeddedMedia | An engraving on top of a token             |
 
 Legend: comma in "Data types" separates verifiable part of the global state from unverifiable and incompressible data.
