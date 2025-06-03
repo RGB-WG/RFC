@@ -163,7 +163,7 @@ Legend: comma in "Data types" separates verifiable part of the global state from
 | ticker     | yes      | String                     | Actual asset ticker                                     |
 | terms      | no       | String                     | Asset terms and conditions                              |
 | baseUrl    | no       | String                     | An actual string for the base URL for external media    |
-| count      | yes      | U32                        | Number of tokens                                        |
+| count      | yes      | U32                        | The number of already issued tokens                     |
 | tokens     | yes      | Nft -> NftSpec             | Individual tokens of the collection                     |
 | engravings | no       | TokenNo -> [EmbeddedMedia] | A map from a token id to an array of applied engravings |
 
@@ -208,7 +208,7 @@ Sum up that balance for each token no to get the total fractions owned by the us
 Check for `owned.inflation` right, which, if present,
 defines a possibility for the collection to be extended with additional NFTs.
 
-You may also check if `computed.maxTokens` is equal to the `computed.count`.
+You also need to check whether `computed.maxTokens` is equal to the `computed.count`.
 If the `computed.maxTokens` is absent, this means the new tokens can be added to the collection
 by the issuer, unlimitedly.
 
@@ -256,6 +256,14 @@ contract consignment.
 
 The contract terms are immutable, and if defined, are always present in the singular `globa.terms`
 value.
+
+### Get associated token media
+
+Each token can embed media right into its specification. However, some issuers may want to host
+the tokens on their website. This can be done by using `external` field in the `NftSpec` structure.
+
+The users should check this field, and, if present,
+append its `digest` value after `computed.baseUrl` to get the full HTTP(s) address for the token media.
 
 ### How to change the asset details
 
