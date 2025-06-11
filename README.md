@@ -30,7 +30,7 @@
 | RGB-25   | Interface     | Draft  | Standard for fractionable non-fungible real-world assets | Federico Tenga     |
 | RGB-26   | Interface     | Draft  | Standard for compliant security assets                   | Federico Tenga     |
 | RGB-30   | Interface     | Draft  | Standard for assets with decentralized issue             | Maxim Orlovsky     |
-| RGB-43   | Wallet        | Draft  | Purpose field for deterministic RGB wallets              | Maxim Orlovsky     |
+| [RGB-44] | Wallet        | Draft  | Purpose field for deterministic RGB wallets              | Maxim Orlovsky     |
 | RGB-46   | Wallet        | Active | Consignment JSON-RPC relay API                           | Stefano Pellegrini |
 | RGB-70   | Wallet        | Active | Payment protocol                                         | Federico Tenga     |
 | RGB-174  | Wallet        | Active | RGB PSBT fields                                          | Maxim Orlovsky     |
@@ -45,3 +45,4 @@
 [RGB-19]: https://github.com/RGB-WG/RFC/blob/master/RGB-19.md
 [RGB-20]: https://github.com/RGB-WG/RFC/blob/master/RGB-20.md
 [RGB-21]: https://github.com/RGB-WG/RFC/blob/master/RGB-21.md
+[RGB-44]: https://github.com/RGB-WG/RFC/blob/master/RGB-44.md
