@@ -27,7 +27,7 @@ are:
 |   `827167'` | RGB on Bitcoin or Liquid | any testnet |
 |   `828942'` | RGB on Liquid            | mainnet     |
 
-## Rational
+## Rationale
 
 The base value (used in Bitcoin mainnet) is `827166`,
 representing a decimal encoding of ASCII characters in "RGB" string.
