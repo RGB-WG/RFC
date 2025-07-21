@@ -36,14 +36,14 @@
 | [RGB-386] | Wallet        | Active | RGB tapret wallet descriptors                            | Maxim Orlovsky     |
 | RGB-1010  | Integration   | Active | RGB-I-0.1-0 ABIs                                         | Maxim Orlovsky     |
 
-[RGB-2]: https://github.com/RGB-WG/RFC/blob/master/RGB-2.md
-[RGB-3]: https://github.com/RGB-WG/RFC/blob/master/RGB-3.md
-[RGB-5]: https://github.com/RGB-WG/RFC/blob/master/RGB-6.md
-[RGB-6]: https://github.com/RGB-WG/RFC/blob/master/RGB-6.md
-[RGB-12]: https://github.com/RGB-WG/RFC/blob/master/RGB-12.md
-[RGB-19]: https://github.com/RGB-WG/RFC/blob/master/RGB-19.md
-[RGB-20]: https://github.com/RGB-WG/RFC/blob/master/RGB-20.md
-[RGB-21]: https://github.com/RGB-WG/RFC/blob/master/RGB-21.md
-[RGB-44]: https://github.com/RGB-WG/RFC/blob/master/RGB-44.md
-[RGB-380]: https://github.com/RGB-WG/RFC/blob/master/RGB-380.md
-[RGB-386]: https://github.com/RGB-WG/RFC/blob/master/RGB-386.md
+[RGB-2]: https://github.com/RGB-WG/RFC/blob/master/RGB-0002.md
+[RGB-3]: https://github.com/RGB-WG/RFC/blob/master/RGB-0003.md
+[RGB-5]: https://github.com/RGB-WG/RFC/blob/master/RGB-0005.md
+[RGB-6]: https://github.com/RGB-WG/RFC/blob/master/RGB-0006.md
+[RGB-12]: https://github.com/RGB-WG/RFC/blob/master/RGB-0012.md
+[RGB-19]: https://github.com/RGB-WG/RFC/blob/master/RGB-0019.md
+[RGB-20]: https://github.com/RGB-WG/RFC/blob/master/RGB-0020.md
+[RGB-21]: https://github.com/RGB-WG/RFC/blob/master/RGB-0021.md
+[RGB-44]: https://github.com/RGB-WG/RFC/blob/master/RGB-0044.md
+[RGB-380]: https://github.com/RGB-WG/RFC/blob/master/RGB-0380.md
+[RGB-386]: https://github.com/RGB-WG/RFC/blob/master/RGB-0386.md
