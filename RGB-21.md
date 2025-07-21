@@ -2,6 +2,7 @@
 Author: Maxim Orlovsky
 Proposed: 28 May 2025
 Revision: 1; 28 May 2025
+License: CC-BY
 ---
 
 # Standard for non-fungible assets

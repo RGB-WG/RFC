@@ -2,6 +2,7 @@
 Author: Maxim Orlovsky
 Proposed: 24 May 2025
 Revision: 1; 24 May 2025
+License: CC0
 ---
 
 # The RGB standard process
@@ -24,3 +25,6 @@ the description of the system in production and active RCP into a streamlined do
 Dr Maxim Orlovsky is the current editor responsible for managing the set of the standards.
 
 A new editor is appointed according to the governance process described in the RGB-4 standard.
+
+All new standards must be provided by their authors under CC-BY or a more permissive license
+(CC0, Unlicensed etc).

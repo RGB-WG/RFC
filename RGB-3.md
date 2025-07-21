@@ -1,5 +1,6 @@
 ---
 Updated: 21 Jul 2025
+License: Unlicensed
 ---
 
 # List of RGB repositories and libraries

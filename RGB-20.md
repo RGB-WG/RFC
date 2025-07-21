@@ -2,6 +2,7 @@
 Author: Maxim Orlovsky
 Proposed: 27 May 2025
 Revision: 1; 27 May 2025
+License: CC-BY
 ---
 
 # Standard for fungible assets

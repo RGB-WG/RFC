@@ -2,6 +2,7 @@
 Author: Maxim Orlovsky, Kairo
 Proposed: 15 May 2025
 Revision: 1; 11 Jun 2025
+License: CC-BY
 ---
 
 # Purpose field for deterministic RGB wallets

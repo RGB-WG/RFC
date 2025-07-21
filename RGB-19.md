@@ -2,6 +2,7 @@
 Author: Maxim Orlovsky
 Proposed: 28 May 2025
 Revision: 1; 31 May 2025
+License: CC-BY
 ---
 
 # Common RGB contract data types

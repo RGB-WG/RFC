@@ -2,6 +2,7 @@
 Author: Maxim Orlovsky
 Proposed: 24 May 2025
 Revision: 1; 24 May 2025
+License: Unlicensed
 ---
 
 # Versioning of RGB releases
